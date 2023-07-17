@@ -1,6 +1,6 @@
 {
   "name": "picscore-library",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^16.1.0",
     "@angular/core": "^16.1.0"
@@ -8,5 +8,18 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "module": "fesm2022/picscore-library.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/picscore-library.mjs",
+      "esm": "./esm2022/picscore-library.mjs",
+      "default": "./fesm2022/picscore-library.mjs"
+    }
+  }
 }

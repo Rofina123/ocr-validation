@@ -1,11 +1,9 @@
 import { OnInit } from '@angular/core';
-import { FormioComponent } from 'angular-formio';
 import * as i0 from "@angular/core";
 export declare class PicsOcrValidationComponent implements OnInit {
     imgUrl: any;
     jsonForm: any;
     isformIO: boolean;
-    formIO: FormioComponent;
     isReadOnly: boolean;
     formJson: Array<any>;
     triggerRefresh: any;
